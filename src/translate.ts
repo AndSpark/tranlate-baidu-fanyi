@@ -31,7 +31,7 @@ export default class Translate {
     this.interceptors()
   }
 
-  async trans(words:string,translateOptions?: TranslateOpitons) {
+  async trans(words:string,translateOptions?: TranslateOpitons):Promise<string[]> {
     const salt = Date.now();
     const sign = md5.hash(`${this.appid}${words}${salt}${this.secret}`);
     const {data} = await this.instance({
@@ -51,7 +51,7 @@ export default class Translate {
   }
 
   private interceptors(): void {
-    this.instance.interceptors.request.use(async (config) => {
+    this.instance.interceptors.request.use(async (config: any) => {
       this.totalInstanceCount++
       if (this.instanceCount >= this.maxInstanceCount) {
         let timer:any = null

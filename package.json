@@ -2,5 +2,25 @@
   "dependencies": {
     "axios": "^0.21.1",
     "spark-md5": "^3.0.1"
-  }
+  },
+  "name": "tranlate-baidu-fanyi",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndSpark/tranlate-baidu-fanyi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": ["./dist"],
+  "bugs": {
+    "url": "https://github.com/AndSpark/tranlate-baidu-fanyi/issues"
+  },
+  "homepage": "https://github.com/AndSpark/tranlate-baidu-fanyi#readme"
 }
